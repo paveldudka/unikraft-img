@@ -13,3 +13,4 @@ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v "$PWD":/workspac
 
 # Deploy an instance
 kraft cloud deploy -p 443:80 -M 512 .
+# ~/Downloads/kraft123/kraft cloud deploy -p 443:80 -M 512 .

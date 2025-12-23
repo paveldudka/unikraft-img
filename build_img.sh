@@ -17,10 +17,10 @@ docker cp cnt-"$name":/ /tmp/.rootfs
 
 rm -f "./initrd" || true
 mkfs.erofs --all-root -d2 -E noinline_data "./initrd" /tmp/.rootfs
-mv /tmp/.rootfs ./.rootfs
+# mv /tmp/.rootfs ./.rootfs
 
 # make rootfs open-to-write
-chmod -R 777 ./.rootfs
+# chmod -R 777 ./.rootfs
 # make initrd open-to-write
 chmod -R 777 "./initrd"
 
